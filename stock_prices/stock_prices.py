@@ -68,10 +68,10 @@ def find_max_profit(prices):
   temp = 0
   print(smallest)
     
-    for items in prices:
-      print(prices[0:prices.index(items)])
-      if prices[-1]< smallest and items - smallest > temp:
-        temp = items-smallest
+  for items in prices:
+    print(prices[0:prices.index(items)])
+    if prices[-1]< smallest and items - smallest > temp:
+      temp = items-smallest
   print(temp)
 
   return temp
